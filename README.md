@@ -17,3 +17,7 @@ Boot from BootX dmg, with 'boot-file' set to the HFS+/UFS partition you want to 
 -prom-env 'boot-args=-v rd=sd0 debug=0xffe kdp=2'
 -prom-env 'boot-file=ide0:11,\mach_kernel'
 ```
+
+### Screenshots
+
+[![](http://hccdata.s3.amazonaws.com/gh_bootx_rhap53.jpg)](http://hccdata.s3.amazonaws.com/gh_bootx_rhap53.jpg)
