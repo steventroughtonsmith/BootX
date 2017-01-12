@@ -18,6 +18,10 @@ Boot from BootX dmg, with 'boot-file' set to the HFS+/UFS partition you want to 
 -prom-env 'boot-file=ide0:11,\mach_kernel'
 ```
 
+### Files
+
+Rough pre-made image which can chain-load Mac OS X Server v1.0 [here] (https://github.com/steventroughtonsmith/BootX/releases/download/1/BootX_custom.dmg.zip).
+
 ### Screenshots
 
 [![](http://hccdata.s3.amazonaws.com/gh_bootx_rhap53.jpg)](http://hccdata.s3.amazonaws.com/gh_bootx_rhap53.jpg)
