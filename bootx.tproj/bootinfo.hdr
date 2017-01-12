@@ -78,34 +78,6 @@ dev /pci/mac-io/floppy
 " floppy" encode-string " AAPL,connector" property
 0 encode-int " reg" property
 
-\ RhapDR2
-
-\ dev /pci/mac-io
-\ new-device " dbdma" device-name finish-device
-\ dev /pci/mac-io/dbdma
-\ " dbdma" encode-string " device_type" property
-\ " dbdma" encode-string " name" property
-\ 0 encode-int " reg" property
-\ 0 encode-int " AAPL,address" property
-\ 0 encode-int " assigned-addresses" property
-
-\ dev /pci/mac-io
-\ new-device " cuda" device-name finish-device
-\ dev /pci/mac-io/cuda
-\ " cuda" encode-string " device_type" property
-\ 0 encode-int " reg" property
-
-\ dev /aliases
-\ " /pci@80000000/mac-io@2/via-cuda" encode-string " cuda" property
-
-dev /options
-" kdb" encode-string " input-device" property
-
-
-dev / 
-" PowerMac" encode-string " model" property
-" AAPL,Gossamer" encode-string " MacRISC" encode-string encode+ " Power Macintosh" encode-string encode+ " compatible" property
-
 load-base
 begin
  dup 6 " &lt;/CHRP" $= if
